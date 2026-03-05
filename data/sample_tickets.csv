@@ -1,0 +1,51 @@
+id,text,category,priority,created_at
+1,"L'application crash quand je clique sur le bouton exporter en PDF depuis la page rapport",bug,high,2025-01-15
+2,"Serait-il possible d'ajouter un mode sombre à l'interface utilisateur ?",feature_request,low,2025-01-15
+3,"Ma facture du mois de décembre affiche un montant incorrect de 299€ au lieu de 199€",billing,high,2025-01-16
+4,"Je n'arrive plus à me connecter depuis ce matin, mot de passe refusé",account,high,2025-01-16
+5,"Comment puis-je exporter mes données au format CSV ?",general,medium,2025-01-17
+6,"Le chargement de la page d'accueil prend plus de 30 secondes",bug,medium,2025-01-17
+7,"J'aimerais pouvoir filtrer les résultats par date de création",feature_request,medium,2025-01-18
+8,"Je n'ai pas reçu ma facture du mois de janvier",billing,medium,2025-01-18
+9,"Comment changer mon adresse email de connexion ?",account,low,2025-01-19
+10,"Où trouver la documentation API ?",general,low,2025-01-19
+11,"Erreur 500 lors de l'upload d'un fichier supérieur à 10MB",bug,high,2025-01-20
+12,"Ajouter la possibilité de créer des templates de rapports personnalisés",feature_request,medium,2025-01-20
+13,"Double prélèvement sur mon compte bancaire pour l'abonnement annuel",billing,high,2025-01-21
+14,"Impossible de réinitialiser mon mot de passe via le lien email",account,high,2025-01-21
+15,"Quels sont les horaires du support technique ?",general,low,2025-01-22
+16,"Le tableau de bord ne s'affiche pas correctement sur mobile",bug,medium,2025-01-22
+17,"Pouvoir intégrer notre outil avec Slack pour les notifications",feature_request,high,2025-01-23
+18,"Le prix affiché sur la page pricing ne correspond pas à celui facturé",billing,high,2025-01-23
+19,"Mon compte a été bloqué sans raison apparente",account,high,2025-01-24
+20,"Est-ce que vous proposez des formations pour les nouveaux utilisateurs ?",general,low,2025-01-24
+21,"La fonction recherche ne retourne aucun résultat malgré des données existantes",bug,high,2025-01-25
+22,"Il serait utile d'avoir un système de tags pour organiser les projets",feature_request,medium,2025-01-25
+23,"Je souhaite passer de l'offre Pro à l'offre Enterprise, quelle est la procédure ?",billing,medium,2025-01-26
+24,"Comment activer l'authentification à deux facteurs sur mon compte ?",account,medium,2025-01-26
+25,"Votre service est-il compatible avec les normes RGPD ?",general,medium,2025-01-27
+26,"L'API retourne une erreur 403 sur l'endpoint /users depuis la mise à jour",bug,high,2025-01-27
+27,"Ajouter un système de notifications push pour les mises à jour importantes",feature_request,medium,2025-01-28
+28,"Je conteste le montant de la pénalité de retard de paiement",billing,high,2025-01-28
+29,"Puis-je transférer mon compte à un autre collaborateur ?",account,low,2025-01-29
+30,"Quel est le SLA garanti pour le plan Enterprise ?",general,medium,2025-01-29
+31,"Les graphiques du dashboard ne se mettent pas à jour en temps réel",bug,medium,2025-01-30
+32,"Proposer une API GraphQL en plus de l'API REST existante",feature_request,low,2025-01-30
+33,"Je n'ai toujours pas reçu mon remboursement après annulation il y a 15 jours",billing,high,2025-01-31
+34,"Mes préférences de notification se réinitialisent à chaque connexion",account,medium,2025-01-31
+35,"Quelles sont les limites d'utilisation de l'API sur le plan gratuit ?",general,low,2025-02-01
+36,"Le tri des colonnes dans le tableau ne fonctionne pas sur Firefox",bug,low,2025-02-01
+37,"Ajouter la possibilité d'exporter en format Excel en plus du CSV",feature_request,medium,2025-02-02
+38,"Demande de facture rectificative pour l'exercice fiscal 2024",billing,medium,2025-02-02
+39,"Comment supprimer définitivement mon compte et toutes mes données ?",account,medium,2025-02-03
+40,"Existe-t-il un programme de parrainage ou d'affiliation ?",general,low,2025-02-03
+41,"Le mode hors-ligne ne synchronise pas correctement les données modifiées",bug,high,2025-02-04
+42,"Permettre l'import de données depuis Google Sheets directement",feature_request,medium,2025-02-04
+43,"Pourquoi la TVA n'apparaît-elle pas sur mes factures ?",billing,medium,2025-02-05
+44,"J'ai oublié la réponse à ma question secrète de sécurité",account,medium,2025-02-05
+45,"Comment contacter le responsable commercial pour un devis personnalisé ?",general,low,2025-02-05
+46,"Le copier-coller ne fonctionne plus dans l'éditeur de texte enrichi",bug,medium,2025-02-06
+47,"Intégrer un système de chat en direct dans l'application",feature_request,high,2025-02-06
+48,"Demande d'échelonnement de paiement pour la facture en cours",billing,medium,2025-02-07
+49,"Comment ajouter un utilisateur avec des permissions limitées en lecture seule ?",account,low,2025-02-07
+50,"Quel navigateur recommandez-vous pour une utilisation optimale ?",general,low,2025-02-08
