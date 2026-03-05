@@ -1,0 +1,55 @@
+# Docker Compose pour la stack MLOps locale
+# TODO: Compléter les services manquants
+
+version: "3.8"
+
+services:
+
+  # ============================================================
+  # Service API (à compléter)
+  # ============================================================
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - MLFLOW_TRACKING_URI=http://mlflow:5000
+    depends_on:
+      - mlflow
+    # TODO: Ajouter les volumes nécessaires
+    # TODO: Ajouter le healthcheck
+
+  # ============================================================
+  # MLflow Tracking Server (fourni)
+  # ============================================================
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:v2.9.2
+    ports:
+      - "5000:5000"
+    command: >
+      mlflow server
+      --host 0.0.0.0
+      --port 5000
+      --backend-store-uri sqlite:///mlflow.db
+      --default-artifact-root /mlflow/artifacts
+    volumes:
+      - mlflow_data:/mlflow
+
+  # ============================================================
+  # Prometheus (à configurer)
+  # ============================================================
+  # TODO: Ajouter le service Prometheus
+  # Image: prom/prometheus:latest
+  # Port: 9090
+  # Volume: monitoring/prometheus/prometheus.yml
+
+  # ============================================================
+  # Grafana (à configurer)
+  # ============================================================
+  # TODO: Ajouter le service Grafana
+  # Image: grafana/grafana:latest
+  # Port: 3000
+  # Volume: monitoring/grafana/
+
+volumes:
+  mlflow_data:
