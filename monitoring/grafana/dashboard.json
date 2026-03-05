@@ -1,0 +1,81 @@
+{
+  "dashboard": {
+    "title": "Ticket Classifier - ML Monitoring",
+    "description": "Dashboard de monitoring pour le modèle de classification de tickets - M1MLOP",
+    "tags": [
+      "mlops",
+      "nlp",
+      "monitoring"
+    ],
+    "panels": [
+      {
+        "title": "Requêtes par minute",
+        "type": "graph",
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 0
+        },
+        "targets": [
+          {
+            "expr": "rate(prediction_requests_total[1m])",
+            "legendFormat": "Requêtes/min"
+          }
+        ],
+        "_comment": "TODO: Configurer les requêtes Prometheus adaptées à vos métriques"
+      },
+      {
+        "title": "Distribution des catégories prédites",
+        "type": "piechart",
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 0
+        },
+        "targets": [
+          {
+            "expr": "prediction_requests_total",
+            "legendFormat": "{{category}}"
+          }
+        ],
+        "_comment": "TODO: Adapter selon les métriques exposées par votre API"
+      },
+      {
+        "title": "Confiance moyenne des prédictions",
+        "type": "gauge",
+        "gridPos": {
+          "h": 8,
+          "w": 6,
+          "x": 0,
+          "y": 8
+        },
+        "targets": [
+          {
+            "expr": "avg(prediction_confidence)",
+            "legendFormat": "Confiance"
+          }
+        ],
+        "_comment": "TODO: Configurer les seuils (vert > 0.8, orange > 0.6, rouge < 0.6)"
+      },
+      {
+        "title": "Temps de réponse (p95)",
+        "type": "stat",
+        "gridPos": {
+          "h": 8,
+          "w": 6,
+          "x": 6,
+          "y": 8
+        },
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, prediction_latency_seconds_bucket)",
+            "legendFormat": "p95"
+          }
+        ]
+      }
+    ]
+  },
+  "_note": "Ce fichier est un STARTER. Importez-le dans Grafana et adaptez les requêtes à vos métriques Prometheus."
+          }
