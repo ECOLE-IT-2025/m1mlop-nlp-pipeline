@@ -1,0 +1,11 @@
+name: ticket-classifier
+
+python_env: python_env.yaml
+
+entry_points:
+  train:
+    parameters:
+      data_path: {type: str, default: "data/sample_tickets.csv"}
+      classifier: {type: str, default: "logistic_regression"}
+      test_size: {type: float, default: 0.2}
+    command: "python -m src.model --data-path {data_path} --classifier {classifier} --test-size {test_size}"
