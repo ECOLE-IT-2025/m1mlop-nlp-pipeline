@@ -1,0 +1,49 @@
+# Kubernetes Deployment pour l'API de classification
+# TODO: Compléter les sections manquantes
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ticket-classifier-api
+  labels:
+    app: ticket-classifier
+    version: v1
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ticket-classifier
+  template:
+    metadata:
+      labels:
+        app: ticket-classifier
+        version: v1
+    spec:
+      containers:
+        - name: api
+          image: ticket-classifier-api:latest
+          ports:
+            - containerPort: 8000
+          # TODO: Ajouter les variables d'environnement
+          # env:
+          #   - name: MLFLOW_TRACKING_URI
+          #     value: "..."
+
+          # TODO: Configurer les health checks
+          # livenessProbe:
+          #   httpGet:
+          #     path: /health
+          #     port: 8000
+          #   initialDelaySeconds: 10
+          #   periodSeconds: 30
+
+          # TODO: Configurer les readiness probes
+
+          # TODO: Définir les ressources (requests/limits)
+          # resources:
+          #   requests:
+          #     memory: "256Mi"
+          #     cpu: "250m"
+          #   limits:
+          #     memory: "512Mi"
+          #     cpu: "500m"
