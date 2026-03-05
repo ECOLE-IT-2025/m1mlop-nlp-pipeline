@@ -1,0 +1,15 @@
+# Kubernetes Service pour exposer l'API
+# TODO: Compléter la configuration
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: ticket-classifier-service
+spec:
+  selector:
+    app: ticket-classifier
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8000
+  type: LoadBalancer
